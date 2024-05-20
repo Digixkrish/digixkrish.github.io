@@ -372,6 +372,7 @@ form button {
 @media (max-width: 768px) {
     #header{
         background-image: url(images/back-phone.png);
+        background: linear-gradient(to top, rgba(12, 12, 12, 0.63),rgba(12, 12, 12, 0.63) );
     }
 
     .column {
