@@ -1,0 +1,100 @@
+.menu-toggle {
+    cursor: pointer;
+}
+
+.mobile-menu.hidden {
+    display: none;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+
+/* Light Mode Styles */
+body{
+    background-color: rgb(197, 243, 237);
+    color: #000000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.product-women {
+    background-image: url('https://img.etimg.com/thumb/msid-70021430,width-640,resizemode-4,imgsize-114127/banking-on-female-shoppers.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.product-men {
+    background-image: url('https://img.freepik.com/premium-photo/portrait-handsome-young-man-with-shopping-bags_220507-19441.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.product-kids {
+    background-image: url('https://img.freepik.com/free-photo/front-view-little-cute-boy-red-t-shirt-jeans-posing_179666-1405.jpg?size=626&ext=jpg&ga=GA1.1.1395991368.1711584000&semt=ais');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Optional: Add a semi-transparent overlay for better text readability */
+.product-women, .product-men, .product-kids {
+    position: relative;
+    padding: 2rem;
+    height: 250px;
+}
+
+.product-women::before, .product-men::before, .product-kids::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+.product-women button, .product-men button, .product-kids button {
+    position: relative;
+    z-index: 2;
+    margin: -10rem 0;
+    background-color: rgb(170, 9, 219);
+    border-color: rgb(191, 3, 248);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Transparency for featured section cards */
+#featured .card {
+    background-color: rgba(255, 255, 255, 0.021); /* Adjust the opacity as needed */
+    border: none; /* Optional: to remove the border of the card */
+}
+
+#featured button{
+    background-color: rgb(255, 116, 2);
+    border-color: rgb(255, 116, 2);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+#bookmark button{
+    background-color: rgb(170, 9, 219);
+    border-color: rgb(191, 3, 248);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 500;
+
+}
+
+
+
